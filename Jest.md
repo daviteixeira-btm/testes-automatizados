@@ -1,5 +1,13 @@
 # Jest (Framework JavaScript para Testes)
 
+<div align="center">
+  <a href="https://jestjs.io/pt-BR/">
+    <img src="https://avatars.githubusercontent.com/u/103283236?s=200&v=4" width="100px" />
+  </a>
+</div>
+
+<br/>
+
 O Jest é um framework de testes em JavaScript desenvolvido pelo Facebook. Ele é amplamente utilizado para testar aplicações JavaScript, incluindo aplicações web, bibliotecas e frameworks, como React, Vue.js e Angular.
 
 Aqui estão algumas características e recursos do Jest:
