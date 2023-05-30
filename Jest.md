@@ -37,3 +37,7 @@ Para começar a criar testes automatizados com o Jest, você pode seguir os segu
 6. Manutenção e atualização dos testes: Conforme seu código evolui, você precisará atualizar e manter seus testes para garantir que eles reflitam as alterações feitas no código. Isso inclui adicionar novos testes para novas funcionalidades, refatorar testes existentes e verificar se os testes continuam válidos à medida que o código é alterado.
 
 Lembrando que essa é apenas uma visão geral dos passos envolvidos na criação de testes automatizados com o Jest. O Jest fornece uma variedade de recursos e funcionalidades adicionais para facilitar a criação e execução de testes. É recomendado consultar a documentação oficial do Jest para obter informações mais detalhadas sobre seu uso e recursos específicos.
+
+## Link's
+
+Para obter uma lista completa de "matchers", confira a <a href="https://jestjs.io/pt-BR/docs/expect">documentação de referência</a>.

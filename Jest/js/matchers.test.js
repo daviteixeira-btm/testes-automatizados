@@ -105,3 +105,46 @@ test('mas existe "stop" em Christoph', () => {
     expect('Christoph').toMatch(/stop/);
 });
 
+/* Arrays e iteráveis
+
+Você pode verificar se um array ou iterável contém um item específico usando toContain()
+
+*/
+
+const shoppingList = [
+    'sucos',
+    'biscoitos',
+    'chocolate',
+    'carne de frango',
+    'batata doce',
+];
+
+test('a lista de compras tem chocolate nela', () => {
+    expect(shoppingList).toContain('chocolate');
+    expect(new Set(shoppingList)).toContain('chocolate');
+});
+
+/* Exceções
+
+Se você quiser testar se uma determinada função lança um erro quando é chamada, use toThrow()
+
+A função que lança uma exceção precisa ser invocada dentro de uma função de encapsulamento, 
+caso contrário, a asserção toThrow falhará.
+
+*/
+
+function compileAndroidCode(){
+    throw new Error('você está usando o JDK errado!');
+}
+
+test('compilar android corre como esperado', () => {
+    expect(()=> compileAndroidCode()).toThrow();
+    expect(()=> compileAndroidCode()).toThrow(Error);
+
+    // Você também pode usar uma string que deve estar contida na mensagem de erro ou um regexp
+    expect(() => compileAndroidCode()).toThrow('você está usando o JDK errado!');
+    expect(() => compileAndroidCode()).toThrow(/JDK/);
+
+    // Ou você pode corresponder a uma mensagem de erro exata usando um regexp como abaixo
+    expect(() => compileAndroidCode()).toThrow(/^você está usando o JDK errado!$/);
+})
